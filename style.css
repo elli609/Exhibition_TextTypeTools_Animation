@@ -1,0 +1,258 @@
+body {
+  background-color: rgb(0, 0, 0);
+  width: 100vw;
+  overflow: hidden;
+  font-family: Helvetica;
+  font-style: italic;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+}
+.headline {
+  line-height: 0.8;
+  transition: all 0.5s ease-in-out;
+}
+.headline-1 {
+  font-size: 32vh;
+  animation: horizontaldrift 18000ms linear infinite alternate;
+}
+.headline-2 {
+  font-size: 22vh;
+  animation: horizontaldrift 12000ms linear infinite alternate-reverse;
+}
+.headline-3 {
+  font-size: 42vh;
+  animation: horizontaldrift 15000ms linear infinite alternate;
+}
+.infobox {
+  margin-top: 4.5vh;
+}
+#container-Ort {
+  display: flex;
+  justify-content: left;
+  font-weight: lighter;
+  font-size: 4vh;
+  margin-right: 3vw;
+}
+#container-info-1 {
+  display: flex;
+  justify-content: right;
+  font-weight: lighter;
+  font-size: 4vh;
+  /* font-size: 3.5vh; */
+  margin-right: 3vw;
+}
+#container-info-2 {
+  display: flex;
+  justify-content: center;
+  font-weight: lighter;
+  font-size: 4vh;
+  margin-right: 3vw;
+}
+
+@media (max-width: 700px) {
+  #container-Ort,
+  #container-info-1,
+  #container-info-2 {
+    font-size: 2vh;
+  }
+  .headline-1 {
+    font-size: 30vh;
+  }
+  .headline-2 {
+    font-size: 20vh;
+  }
+  .headline-3 {
+    font-size: 40vh;
+  }
+}
+
+.info-Ort2 {
+  animation-name: swingAnimation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+.info-Ort4 {
+  animation-name: pulseAnimation;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+.info-ort7 {
+  animation-name: swingAnimation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+.info-ort9 {
+  animation-name: swingAnimation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+.info-ort11 {
+  animation-name: swingAnimation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+.info-1b {
+  animation-name: pulseAnimation;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+.info-1e {
+  animation-name: swingAnimation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+.info-2b {
+  animation-name: pulseAnimation;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+.info-2d {
+  animation-name: swingAnimation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+.info-2f {
+  animation-name: pulseAnimation;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+.info-2g {
+  animation-name: swingAnimation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+.headline-1:hover {
+  font-size: 40vw;
+}
+.headline-2:hover {
+  font-size: 60vw;
+}
+.headline-3:hover {
+  font-size: 10vw;
+}
+.info-Ort1:hover {
+  transform: rotate(180deg);
+  transition: 5s;
+}
+.info-ort6:hover {
+  animation: blur 3s ease-in-out infinite alternate;
+}
+.info-ort8:hover {
+  animation: blur 3s ease-in-out infinite alternate;
+}
+.info-1a:hover {
+  transform: rotate(180deg);
+  transition: 5s;
+}
+.info-1b:hover {
+  animation: blur 3s ease-in-out infinite alternate;
+}
+.info-1cc:hover {
+  transform: rotate(180deg);
+  transition: 5s;
+}
+.info-1g:hover {
+  animation: blur 3s ease-in-out infinite alternate;
+}
+.info-2a:hover {
+  animation: blur 3s ease-in-out infinite alternate;
+}
+.info-2e:hover {
+  transform: rotate(180deg);
+  transition: 5s;
+}
+.info-2h:hover {
+  transform: rotate(180deg);
+  transition: 5s;
+}
+
+@keyframes horizontaldrift {
+  from {
+    margin-left: -1000%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes blur {
+  0%,
+  90% {
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+  }
+  50% {
+    -webkit-filter: blur(50px);
+    -moz-filter: blur(50px);
+    -o-filter: blur(50px);
+    -ms-filter: blur(50px);
+  }
+}
+@keyframes pulseAnimation {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+@keyframes swingAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(30deg);
+  }
+  40% {
+    transform: rotate(-20deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
